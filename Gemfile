@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+ruby File.read('.ruby-version').strip[/\A[^-]+/]
+
 gem 'rails', '3.0.4'
 
 # Bundle edge Rails instead:

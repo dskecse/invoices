@@ -91,3 +91,9 @@ DEPENDENCIES
   rails (= 3.0.4)
   sqlite3-ruby
   will_paginate (~> 3.0.pre2)
+
+RUBY VERSION
+   ruby 2.1.8p440
+
+BUNDLED WITH
+   1.16.1
