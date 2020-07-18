@@ -48,7 +48,7 @@ class InvoicesController < ApplicationController
   # POST /invoices.xml
   def create
     @invoice = Invoice.new(params[:invoice])
-    
+
     respond_to do |format|
       if @invoice.validate_client_belongs_to(current_user) and @invoice.save
         format.html { redirect_to(@invoice, :notice => t('.invoice_created')) }

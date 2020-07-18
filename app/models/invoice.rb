@@ -22,7 +22,7 @@ class Invoice < ActiveRecord::Base
     
     @total
   end
-  
+
   def validate_client_belongs_to(user)
     unless user.company.clients.find(self.client_id)
       self.errors.add(:client_id, "is invalid.") 
