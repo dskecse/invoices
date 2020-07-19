@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+  config.relative_url_root = ""
+
   protect_from_forgery
   before_filter :authorize, :login_from_cookie
   
